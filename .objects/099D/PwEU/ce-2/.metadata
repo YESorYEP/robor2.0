@@ -1,0 +1,12 @@
+﻿{
+  "Id": "ce-2sJo4MEGDAO1s12lJAA",
+  "Reference": "Z4pSr4iItUKGot3htH9NTA/ce-2sJo4MEGDAO1s12lJAA",
+  "ParentRef": "Z4pSr4iItUKGot3htH9NTA/PwEUCDlGQ0iDBr7UzE0CVQ",
+  "Name": "Яндекс — Яндекс Браузер",
+  "Type": "Screen",
+  "Created": "2023-05-11T14:56:25.4086141Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-05-11T14:56:25.4086141Z"
+}

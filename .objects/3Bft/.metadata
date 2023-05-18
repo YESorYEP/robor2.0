@@ -1,0 +1,11 @@
+﻿{
+  "Id": "3Bftjs_D40ibA8HXgOpmdQ",
+  "Reference": "Z4pSr4iItUKGot3htH9NTA/3Bftjs_D40ibA8HXgOpmdQ",
+  "Name": "Прогноз погоды в Оймяконе на 10 дней — Яндекс app",
+  "Type": "App",
+  "Created": "2023-05-11T14:16:27.3338869Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-05-11T14:16:27.3338869Z"
+}
