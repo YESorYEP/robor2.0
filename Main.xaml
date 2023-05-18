@@ -143,7 +143,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Create report of weather forecast" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Create report of weather forecast" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Temperature" Name="temperature" />
       <Variable x:TypeArguments="x:Int32" Default="2" Name="index" />
@@ -156,7 +156,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Create Excel Shablon Report" sap:VirtualizedContainerService.HintSize="1114.4,2802.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Create Excel Shablon Report" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -339,20 +339,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <Parallel DisplayName="Parallel Process" sap:VirtualizedContainerService.HintSize="1114.4,404.8" sap2010:WorkflowViewState.IdRef="Parallel_1">
+    <Parallel DisplayName="Parallel Process" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="Parallel_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:TriggerScope DisplayName="Repeat every 5 min" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
+      <ui:TriggerScope DisplayName="Repeat every 5 min" sap:VirtualizedContainerService.HintSize="500.8,442.4" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
         <ui:TriggerScope.Action>
           <ActivityAction x:TypeArguments="ui:RepeatTriggerArgs">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:RepeatTriggerArgs" Name="args" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="ParseData" sap:VirtualizedContainerService.HintSize="924.8,6214.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="ParseData" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -783,10 +783,10 @@
         </ui:TriggerScope.Action>
         <ui:TriggerScope.Triggers>
           <scg:List x:TypeArguments="Activity" Capacity="4">
-            <ui:RepeatTrigger DisplayName="Repeat trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="465.6,74.4" sap2010:WorkflowViewState.IdRef="RepeatTrigger_1" Interval="00:01:00" SchedulingMode="Sequential" TriggerId="2a470dbd-e091-498a-beab-4a473f3e8661">
+            <ui:RepeatTrigger DisplayName="Repeat trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="465.6,112" sap2010:WorkflowViewState.IdRef="RepeatTrigger_1" Interval="00:05:00" SchedulingMode="Sequential" TriggerId="2a470dbd-e091-498a-beab-4a473f3e8661">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -795,18 +795,18 @@
         </ui:TriggerScope.Triggers>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:TriggerScope>
-      <ui:TriggerScope DisplayName="Repeat every 30 min" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TriggerScope_3" SchedulingMode="Sequential">
+      <ui:TriggerScope DisplayName="Repeat every 30 min" sap:VirtualizedContainerService.HintSize="200,442.4" sap2010:WorkflowViewState.IdRef="TriggerScope_3" SchedulingMode="Sequential">
         <ui:TriggerScope.Action>
           <ActivityAction x:TypeArguments="ui:RepeatTriggerArgs">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:RepeatTriggerArgs" Name="args" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="860.8,3187.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="Добрый день! Робот отработал заявку по прогнозу погоды, добавились даты: " Name="bodyOfLetter" />
                 <Variable x:TypeArguments="x:String" Default="Прогноз погоды от Халариса Андрея" Name="ThemeOfLetter" />
@@ -1051,7 +1051,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:TriggerScope>
-      <ui:TriggerScope DisplayName="Repeat every 60 min" sap:VirtualizedContainerService.HintSize="500.79999999999995,358.4" sap2010:WorkflowViewState.IdRef="TriggerScope_2" SchedulingMode="Sequential">
+      <ui:TriggerScope DisplayName="Repeat every 60 min" sap:VirtualizedContainerService.HintSize="200,442.4" sap2010:WorkflowViewState.IdRef="TriggerScope_2" SchedulingMode="Sequential">
         <ui:TriggerScope.Action>
           <ActivityAction x:TypeArguments="ui:RepeatTriggerArgs">
             <ActivityAction.Argument>
